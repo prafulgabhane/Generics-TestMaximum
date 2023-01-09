@@ -17,7 +17,6 @@ namespace FindMaxGenerics
             Console.WriteLine("Largest String is " + MaxNum.MaximumStringNumber("Megha", "Sejal", "Aish"));
             Console.WriteLine("test case 3");
             Console.WriteLine("Largest String is " + MaxNum.MaximumStringNumber("Bhakti", "Ganesh", "Virat")); Console.ReadLine();
-
         }
     }
 }
