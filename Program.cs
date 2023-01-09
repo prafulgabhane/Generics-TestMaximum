@@ -10,14 +10,16 @@ namespace FindMaxGenerics
     {
         static void Main(string[] args)
         {
-            MaxInt maxint = new MaxInt();
+            MaxFloat maxfloat = new MaxFloat();
             Console.WriteLine("test case 1");
-            Console.WriteLine("Maximum Integer Number is " + MaxInt.MaximumIntegerNumber(10, 1, 5));
+            Console.WriteLine("Maximum float Number is " + MaxFloat.MaximumFloatNumber(10.23f, 1.23f, 5.56f));
             Console.WriteLine("test case 2");
-            Console.WriteLine("Maximum Integer Number is " + MaxInt.MaximumIntegerNumber(3, 15, 9));
+            Console.WriteLine("Maximum float Number is " + MaxFloat.MaximumFloatNumber(3.23f, 15.66f, 10.23f));
             Console.WriteLine("test case 3");
-            Console.WriteLine("Maximum Integer Number is " + MaxInt.MaximumIntegerNumber(5, 8, 12));
+            Console.WriteLine("Maximum float Number is " + MaxFloat.MaximumFloatNumber(8.5f, 8.23f, 12.43f));
             Console.ReadLine();
+
+
         }
     }
 }

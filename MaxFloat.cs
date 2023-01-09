@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace FindMaxGenerics
 {
-    public class MaxInt
+
+
+    public class MaxFloat
     {
-        public static int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
+        public static float MaximumFloatNumber(float firstValue, float secondValue, float thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {
@@ -26,4 +28,5 @@ namespace FindMaxGenerics
         }
     }
 }
+
 
