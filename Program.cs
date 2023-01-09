@@ -10,13 +10,15 @@ namespace FindMaxGenerics
     {
         static void Main(string[] args)
         {
-            MaxNum maxnum = new MaxNum();
-            Console.WriteLine("test case 1");
-            Console.WriteLine("Largest String is " + MaxNum.MaximumStringNumber("Praful", "Ashwati", "Megha"));
-            Console.WriteLine("test case 2");
-            Console.WriteLine("Largest String is " + MaxNum.MaximumStringNumber("Megha", "Sejal", "Aish"));
-            Console.WriteLine("test case 3");
-            Console.WriteLine("Largest String is " + MaxNum.MaximumStringNumber("Bhakti", "Ganesh", "Virat")); Console.ReadLine();
+            MaxGeneric<int> maxGenericInt = new MaxGeneric<int>();
+                maxGenericInt.findMax(20, 60, 40);
+
+                MaxGeneric<float> maxGenericFloat = new MaxGeneric<float>();
+                maxGenericFloat.findMax(10.10f, 11.10f, 12.12f);
+
+                MaxGeneric<string> maxGenericStr = new MaxGeneric<string>();
+                maxGenericStr.findMax("Apple","Pineapple","Orange");
+                Console.ReadLine();
         }
     }
 }
