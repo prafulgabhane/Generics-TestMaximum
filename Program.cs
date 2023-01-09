@@ -10,13 +10,14 @@ namespace FindMaxGenerics
     {
         static void Main(string[] args)
         {
-            MaxInt maxint = new MaxInt();
-            Console.WriteLine("test case 1");
-            Console.WriteLine("Maximum Integer Number is " + MaxInt.MaximumIntegerNumber(10, 1, 5));
-            Console.WriteLine("test case 2");
-            Console.WriteLine("Maximum Integer Number is " + MaxInt.MaximumIntegerNumber(3, 15, 9));
-            Console.WriteLine("test case 3");
-            Console.WriteLine("Maximum Integer Number is " + MaxInt.MaximumIntegerNumber(5, 8, 12));
+            MaxGeneric<int> intValue = new MaxGeneric<int>(20, 60, 40);
+            intValue.testMaximum();
+
+            MaxGeneric<float> floatValue = new MaxGeneric<float>(10.10f, 11.10f, 12.12f);
+            floatValue.testMaximum();
+
+            MaxGeneric<string> strMax = new MaxGeneric<string>("Apple", "Pineapple", "Orange");
+            strMax.testMaximum();
             Console.ReadLine();
         }
     }
